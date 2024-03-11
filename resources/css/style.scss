@@ -1,0 +1,139 @@
+// styles.scss
+
+@import "./Sass/Utilities/variables";
+@import "./Sass/Utilities/themes";
+@import "./Sass/Components/accordion";
+@import "./Sass/Components/accrediation";
+@import "./Sass/Components/buttons";
+@import "./Sass/Components/card";
+@import "./Sass/Components/footer";
+@import "./Sass/Components/nav";
+@import "./Sass/Utilities/assets";
+@import "./Sass/Utilities/global";
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+td,
+.td-adj,
+th {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: $ink-blue !important;
+  font-weight: 700 !important;
+}
+
+.td-adj,
+.inputWrapper,
+.actions {
+  padding: 0.5rem !important;
+}
+
+th {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px !important;
+  line-height: 28px;
+  color: $ink-blue !important;
+  font-weight: 700 !important;
+}
+
+.border-bottom {
+  height: 5rem;
+}
+
+.step-section {
+  background-color: #efefef;
+}
+
+
+
+.borderbottom {
+  border: none !important;
+  border-bottom: solid 1px $ink-blue !important;
+  height: 78px;
+}
+
+/* Rectangle 52 */
+.belong-section {
+  background: linear-gradient(rgba(0, 36, 78, 0.8), rgba(0, 36, 78, 0.8)),
+    url(https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/a43817ad-5225-43a0-bd29-0d66e87dde59.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover ;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+}
+
+.smile {
+  transform: translate(0, -314px);
+  float: right;
+  display: block;
+  margin: 0 auto; /* This will center the image horizontally */
+  width: 611px; /* Ensure the image doesn't exceed the width of its container */
+  height: auto;
+}
+.info-section {
+  height: 30rem;
+}
+
+.fs-24 {
+font-family:"Open Sans", Arial, Helvetica, sans-serif;
+font-size: 24px;
+color: #1E1E1E;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+h4 {
+  color: #0D2D65;
+  ;
+}
+
+.complete-section {
+  background-color: $primary;
+}
+
+.my-7 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.link-highlight {
+  color: #2066A2;
+  text-decoration: underline;
+}
+@media only screen and (max-width: $breakpoint-sm) {
+  .smile {
+    float: none;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .belong-section {
+    background: linear-gradient(rgba(0, 36, 78, 0.8), rgba(0, 36, 78, 0.8));
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+}
+@media only screen and (max-width: 990px) {
+  
+  .info-section {
+    height: 100%;
+  }
+
+  .smile {
+    float: none;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
